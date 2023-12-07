@@ -6,7 +6,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 
-function AddFilm() {
+function AddMusic() {
   const navigate = useNavigate();
   const [title, setTitle] = useState("");
   const [image, setImage] = useState("");
@@ -15,7 +15,7 @@ function AddFilm() {
   const [author, setAuthor] = useState("");
   const [relaseDate, setReleaseDate] = useState("");
 
-  const addFilms = () => {
+  const addMusics = () => {
     axios.post('http://localhost:3001/api/posts', {
       title: title,
       image: image,
@@ -28,7 +28,7 @@ function AddFilm() {
         navigate("/");
       })
       .catch((error) => {
-        console.error('Adding film failed:', error);
+        console.error('Adding music failed:', error);
         alert('Błędne dane');
       });
   };
@@ -45,13 +45,13 @@ function AddFilm() {
   };
 
   const inputStyle = {
-    width: '100%', // Zwiększona szerokość pola do wpisywania
+    width: '100%', 
   };
 
   const labelStyle = {
     display: 'block',
-    textAlign: 'center', // Wyśrodkowanie tekstu etykiety
-    marginBottom: '5px', // Dodany odstęp poniżej etykiet
+    textAlign: 'center', 
+    marginBottom: '5px', 
   };
 
   return (
@@ -85,7 +85,7 @@ function AddFilm() {
               <MDBInput id='form6' type='text' value={relaseDate} onChange={e => setReleaseDate(e.target.value)} style={inputStyle} />
             </div>
 
-            <button className="mb-4" onClick={addFilms} style={buttonStyle}>
+            <button className="mb-4" onClick={addMusics} style={buttonStyle}>
                   Dodaj piosenke
             </button>
           </MDBContainer>
@@ -96,4 +96,4 @@ function AddFilm() {
   );
 }
 
-export default AddFilm;
+export default AddMusic;

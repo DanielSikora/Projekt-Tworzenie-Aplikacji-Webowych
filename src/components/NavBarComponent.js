@@ -15,7 +15,7 @@ function NavBarComponent() {
             <div>
                 <Navbar bg="dark" variant="dark">
                     <Container fluid>
-                        <Navbar.Brand href="/">BazaFilmów</Navbar.Brand>
+                        <Navbar.Brand href="/">Baza Muzyczna</Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll"/>
                         <Navbar.Collapse id="navbarScroll">
                             <Nav
@@ -26,7 +26,7 @@ function NavBarComponent() {
                                 <Nav.Link href="/">Strona główna</Nav.Link>
                                 {!isNotLogged && <Nav.Link onClick={() => {
                                     window.location.href = "/add";
-                                }} to="/">Dodaj film</Nav.Link>}
+                                }} to="/">Dodaj utwór</Nav.Link>}
                             </Nav>
                             <Nav
                                 className="mx-auto order-0"
