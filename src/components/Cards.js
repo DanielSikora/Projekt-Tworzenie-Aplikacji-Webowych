@@ -12,7 +12,7 @@ function Cards(props) {
                         <Card.Img variant="top" style={{ width: '100%', height: '80%', backgroundColor: '#1C7293' }} src={music.image} />
                         <Card.Body styles={{}}>
                             <Card.Title styles={{ textAlign: 'center' }}>{music.title}</Card.Title>
-                            <Link to='/details' state={{ music: music }}><Button variant="primary">Strona muzyki</Button></Link>
+                            <Link to='/details' state={{ music: music }}><Button variant="primary">Strona utworu</Button></Link>
                         </Card.Body>
                     </Card>
                 ))}
