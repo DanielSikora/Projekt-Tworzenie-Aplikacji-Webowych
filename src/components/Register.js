@@ -35,14 +35,14 @@ function Register() {
   };
 
   const buttonStyle = {
-    backgroundColor: '#4CAF50', // Zielony kolor tła
-    color: '#fff', // Biały kolor tekstu
-    padding: '14px 24px', // Rozmiar wewnętrznego odstępu przycisku
+    backgroundColor: '#4CAF50', 
+    color: '#fff', 
+    padding: '14px 24px', 
     border: 'none',
     borderRadius: '5px',
     cursor: 'pointer',
-    transition: 'none', // Usunięcie efektu zmiany wyglądu po najechaniu
-    transform: 'scale(1)', // Dodane, aby uniknąć efektu powiększania
+    transition: 'none', 
+    transform: 'scale(1)', 
   };
 
   return (

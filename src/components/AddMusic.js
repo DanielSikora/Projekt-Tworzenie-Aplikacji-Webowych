@@ -69,15 +69,15 @@ function AddMusic() {
               <MDBInput id='form2' type='textarea' value={image} onChange={e => setImage(e.target.value)} style={inputStyle} />
             </div>
             <div className="mb-4">
-              <label style={labelStyle}>Tekst piosenki:</label>
+              <label style={labelStyle}>Tekst utworu:</label>
               <MDBTextArea id='form3' type='textarea' rows={10} value={text} onChange={e => setText(e.target.value)} style={inputStyle} />
             </div>
             <div className="mb-4">
-              <label style={labelStyle}>Link do piosenki na yt:</label>
+              <label style={labelStyle}>Link do utworu na yt:</label>
               <MDBInput id='form4' type='text' value={ytLink} onChange={e => setYtLink(e.target.value)} style={inputStyle} />
             </div>
             <div className="mb-4">
-              <label style={labelStyle}>Autor piosenki:</label>
+              <label style={labelStyle}>Autor utworu:</label>
               <MDBInput id='form5' type='text' value={author} onChange={e => setAuthor(e.target.value)} style={inputStyle} />
             </div>
             <div className="mb-4">
@@ -86,7 +86,7 @@ function AddMusic() {
             </div>
 
             <button className="mb-4" onClick={addMusics} style={buttonStyle}>
-                  Dodaj piosenke
+                  Dodaj utwór
             </button>
           </MDBContainer>
         </div>

@@ -8,18 +8,18 @@ import axios from "axios";
 function Home() {
 
 
-    const [films, setFilms] = useState([])
-    const getFilms = () => {
+    const [musics, setMusics] = useState([])
+    const getMusics = () => {
         axios.get('http://localhost:3001/api/posts')
             .then((restore) => {
-                setFilms(restore.data)
+                setMusics(restore.data)
             })
     }
 
     
 
     useEffect(() => {
-        getFilms()
+        getMusics()
     }, [])
 
 
@@ -28,7 +28,7 @@ function Home() {
 
             <NavBarComponent></NavBarComponent>
             <div className={'home'}>
-                <Cards films={films} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}></Cards>
+                <Cards musics={musics} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}></Cards>
                 <Footer></Footer>
             </div>
             
